@@ -1,0 +1,48 @@
+
+
+!CONFIGURATION: 'Debug__TICLANG' (com.ti.ccstudio.buildDefinitions.TMS470.Debug.816894798) [Wed Apr 20 15:58:36 CDT 2022]
+
+	!TOOL: 'Arm Compiler' (com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_1.0.exe.compilerDebug.522472290)
+
+		!NOTE: Source-tool setting '--float_support=FPv4SPD16 -mv7M4' has been migrated to target-tool setting '-mfloat-abi=hard -mfpu=fpv4-sp-d16'
+
+		!NOTE: Source-tool default '--c89 --relaxed_ansi' has been migrated to target-tool setting '-std=gnu90'
+
+		!NOTE: Source-tool default '--c++14 --relaxed_ansi' has been migrated to target-tool setting '-std=gnu++14'
+
+		!NOTE: Source-tool setting '-mv7M4' has been migrated to target-tool setting '-march=thumbv7em -mcpu=cortex-m4'
+
+		!NOTE: Source-tool default '--endian=little' has been migrated to target-tool setting '-mlittle-endian'
+
+		!NOTE: Source-tool setting '--code_state=16' has been migrated to target-tool setting '-mthumb'
+
+		!NOTE: Source-tool default '-Ooff' has been migrated to target-tool setting '-O0'
+			tiarmclang's -O0 option disables optimization
+
+		!NOTE: Source-tool setting: 
+				--include_path="${INHERITED_INCLUDE_PATH}" --include_path="${COM_TI_SIMPLELINK_CC13X2_26X2_SDK_INCLUDE_PATH}" --include_path="${SYSCONFIG_TOOL_INCLUDE_PATH}" --include_path="${PROJECT_ROOT}" --include_path="${PROJECT_ROOT}/${ConfigName}" --include_path="${COM_TI_SIMPLELINK_CC13X2_26X2_SDK_INSTALL_DIR}/source" --include_path="${COM_TI_SIMPLELINK_CC13X2_26X2_SDK_INSTALL_DIR}/source/ti/posix/ccs" --include_path="${CG_TOOL_ROOT}/include" 
+			has been migrated to target-tool setting: 
+				-I"${INHERITED_INCLUDE_PATH}" -I"${COM_TI_SIMPLELINK_CC13X2_26X2_SDK_INCLUDE_PATH}" -I"${SYSCONFIG_TOOL_INCLUDE_PATH}" -I"${PROJECT_ROOT}" -I"${PROJECT_ROOT}/${ConfigName}" -I"${COM_TI_SIMPLELINK_CC13X2_26X2_SDK_INSTALL_DIR}/source" -I"${COM_TI_SIMPLELINK_CC13X2_26X2_SDK_INSTALL_DIR}/source/ti/posix/ccs" -I"${CG_TOOL_ROOT}/include"
+
+		!NOTE: Source-tool setting: 
+				--define=${INHERITED_SYMBOLS} --define=${COM_TI_SIMPLELINK_CC13X2_26X2_SDK_SYMBOLS} --define=${SYSCONFIG_TOOL_SYMBOLS} --define=DeviceFamily_CC26X2 
+			has been migrated to target-tool setting: 
+				-D${INHERITED_SYMBOLS} -D${COM_TI_SIMPLELINK_CC13X2_26X2_SDK_SYMBOLS} -D${SYSCONFIG_TOOL_SYMBOLS} -DDeviceFamily_CC26X2
+
+		!NOTE: Source-tool setting '-g' has been migrated to target-tool setting '-gdwarf-3'
+
+		!NOTE: Source-tool default '--wchar_t=16' has been migrated to target-tool setting '-fno-short-wchar'
+			tiarmclang does not support 16-bit wchar_t in its runtime libraries; the --wchar_t=16 option will map to tiarmclang's -fno-short-wchar option (32-bit wchar_t type assumed)
+
+		!NOTE: Source-tool default '--common=on' has been migrated to target-tool setting '-fcommon'
+
+		!NOTE: Source-tool setting '--gen_func_subsections=on' has been migrated to target-tool setting '-ffunction-sections'
+
+		!NOTE: Source-tool default '' has been migrated to target-tool setting '-Werror=ti-pragmas -Werror=ti-macros -Werror=ti-intrinsics'
+			use of legacy TI pragmas will be flagged as errors
+			use of legacy TI pre-defined macro symbols will be flagged as errors
+			use of legacy TI intrinsics will be flagged as errors
+
+		!WARNING: The following source-tool settings were not migrated because no migration rules have been defined - please migrate these settings manually, if applicable: 
+				--diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number
+
